@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Beau Rivage', cursive;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-box{
+    background: rgb(249, 100, 46);
+    text-align: center;
+    padding: 40px 90px;
+    color: whitesmoke;
+    position: relative;
+    border-radius: 20px;
+}
+
+.menu-icon{
+    width: 25px;
+    position: absolute;
+    left: 40px;
+    top: 40px;
+}
+
+.settings-icon{
+    width: 25px;
+    position: absolute;
+    right: 40px;
+    top: 40px;
+}
+
+.profile-pic{
+    width: 150px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 6px;
+    margin-top: 40px;
+}
+
+.profile-bottom{
+    background: white;
+    color: grey;
+    padding: 60px 0;
+    margin-right: -90px;
+    margin-left: -90px;
+    margin-bottom: -40px;
+    border-radius: 20px;
+    margin-top: -10px;
+}
+
+.profile-box button{
+    background: white;
+    color: rgb(249, 100, 46);
+    border: none;
+    outline: none;
+    box-shadow: 0 5px 10px rgba(244,67,54,0.5);
+    padding: 15px 60px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-bottom: -50px;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.profile-box h3{
+    font-size: 22px;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.images-pur img{
+    width: 20px;
+    margin: 35px 5px;
+    cursor: pointer;
+}

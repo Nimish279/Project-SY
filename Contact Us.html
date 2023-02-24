@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery Shop</title>
+    <link rel="stylesheet" href="Style 2.css"> <!--Connects the HTML file to css file-->
+  </head>
+  <body>
+      <div class="container">
+          <form onsubmit="sendEmail(); reset(); return false;">
+              <h3>GET IN TOUCH</h3>
+              <input type="text" id="name" placeholder="Your Name" required>
+              <input type="email" id="email" placeholder="Email id" required>
+              <input type="text" id="phone" placeholder="Phone number" required>
+              <textarea id="message" rows="4" placeholder="How Can We Help You?"></textarea>
+              <button type="submit">Send Message</button>
+          </form>
+      </div>
+      <script src="https://smtpjs.com/v3/smtp.js"></script>
+      <script>
+          function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "nimish.joshi2002@gmail.com",
+    Password : "ynnnnbmqxkudymyt",
+    To : 'nimish.d.joshi@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Query On Website",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+          }
+      </script>
+</body>
+</html>
